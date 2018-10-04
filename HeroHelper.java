@@ -930,5 +930,20 @@ public class HeroHelper {
         return dist;
 
     }
+    
+     public static void pesanBox(Context c, String msg) {
+        AlertDialog.Builder alertBuilder = new AlertDialog.Builder(c);
+
+        alertBuilder.setTitle("Error!");
+        alertBuilder.setMessage(msg);
+
+        alertBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        alertBuilder.show();
+    }
 
 }
