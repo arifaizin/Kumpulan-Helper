@@ -15,9 +15,8 @@ import android.provider.MediaStore;
 /**
  * Created by Gilang Ramadhan on 19/06/2017.
  */
-
 public class RealPathUtils {
-
+// class RealpathUtils
     //surpress
     @SuppressLint("NewApi")
     public static String getRealPathFromURI_API19(Context context, Uri uri) {
